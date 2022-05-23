@@ -116,19 +116,16 @@ section > #grid-scroll-horizontal {
     overflow: hidden;
 }
 
-#scroll-horizontal > img {
-
-}
-
-
 /* Habilities aquired */
-section > #habilitied-aquired {
+section > #habilities-aquired {
     display: flex;
     width: 100%;
     background-color: #F7F7F7;
-    overflow: hidden;
 }
 
+#habilities-aquired > img {
+    display: none;
+}
 
 /* Work */
 #work, #contact-info {

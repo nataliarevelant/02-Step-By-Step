@@ -12,7 +12,7 @@ function scrollHorizontal (event) {
 
     passoAtual++
 
-    var target = document.querySelector('.step' + passoAtual)
+    var target = document.querySelector('.' + passoAtual)
     
     target.scrollIntoView()
 
