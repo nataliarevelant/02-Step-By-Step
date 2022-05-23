@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+    /* border: 1px solid red; */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.work-contact {
+    width: 200px;
+    margin-left: 6.25rem;
+    margin-top: 2rem;
+    margin-bottom: 6.25rem;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: flex-start;
+}
+
+.work-contact > * {
+    align-self: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.social-media {
+    width: 200px;
+    margin-right: 6.25rem;
+    margin-top: 2rem;
+    margin-bottom: 6.25rem;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: flex-end;
+}
+
+.social-media > *{
+    align-self: center;
+    text-decoration: none;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#intro {
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+    margin-bottom: 6.25rem;
+}
+
+#intro > h4 {
+    margin-top: 0%;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+#intro > h2 {
+    margin-top: 0%;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+h5 {
+    margin-top: 0%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+hr {
+    margin-left: 5.563rem;
+    width: 78rem;
+    background-color: #7C7C7C;
+    height: 1px;
+}
+
+
+/* Step by Step */
+section > #grid-scroll-horizontal {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+}
+
+.arrow-left:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 40%;
+    right: 3%;
+}
+
+.arrow-right:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#scroll-horizontal {
+    grid-column: 1 / span 3;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#scroll-horizontal > img {
+
+}
+
+
+/* Habilities aquired */
+section > #habilitied-aquired {
+    display: flex;
+    width: 100%;
+    background-color: #F7F7F7;
+    overflow: hidden;
+}
+
+
+/* Work */
+#work, #contact-info {
+    margin-left: 5.563rem;
+}
+
+#work > h1 {
+    margin: 0%;
+    font-size: 6rem;
+    font-weight: 600;
+    margin-top: 3.75rem;
+}
+
+#work > h5 {
+    margin: 0%;
+}
+
+
+/* Contact */
+#contact-info > h1 {
+    margin: 0%;
+    font-size: 6rem;
+    font-weight: 600;
+    margin-top: 3.75rem;
+}
+
+#contact-info > h5 {
+    margin: 0%;
+}
