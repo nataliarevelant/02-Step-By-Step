@@ -81,15 +81,22 @@ hr {
 
 /* Step by Step */
 section > #grid-scroll-horizontal {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr;
     position: relative;
+}
+
+#scroll-horizontal {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#scroll-horizontal > img{
+    width: 100%;
 }
 
 .arrow-left {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 3%;
 }
 
@@ -100,20 +107,13 @@ section > #grid-scroll-horizontal {
 
 .arrow-right {
     position: absolute;
-    top: 40%;
+    top: 35%;
     right: 3%;
 }
 
 .arrow-right:hover {
     cursor: pointer;
     opacity: 80%;
-}
-
-#scroll-horizontal {
-    grid-column: 1 / span 3;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
 }
 
 /* Habilities aquired */
@@ -163,11 +163,19 @@ section > #habilities-aquired {
     font-size: 1.2rem;
 }
 
-.main-work > div > hr {
-    width: 40px;
-    justify-self: flex-start;
+.project-field {
+    margin-top: 0.2rem;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
+.main-work > div > hr {
+    margin: 0;
+    margin-top: 1rem;
+    width: 400px;
+    height: 0.3px;
+    color: #7C7C7C;
+}
 
 
 /* Contact */
@@ -180,4 +188,24 @@ section > #habilities-aquired {
 
 #contact-info > h5 {
     margin: 0%;
+}
+
+.contact-list {
+    display: flex;
+    gap: 80px;
+}
+
+.contact-list > div {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Footer */
+
+footer {
+    padding: 7rem;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
 }
