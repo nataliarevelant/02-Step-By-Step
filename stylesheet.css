@@ -26,6 +26,11 @@ header {
     font-weight: 600;
 }
 
+.work-contact > a {
+    text-decoration: none;
+    color: #212121;
+}
+
 .social-media {
     width: 200px;
     margin-right: 6.25rem;
@@ -86,18 +91,33 @@ section > #grid-scroll-horizontal {
 
 #scroll-horizontal {
     width: 100%;
-    display: flex;
-    overflow: hidden;
+    position: relative;
 }
 
 #scroll-horizontal > img{
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    opacity: 0;
+}
+
+#scroll-horizontal > img:first-child{
+    position: static;
+}
+
+#scroll-horizontal > img.active{
+    transform: translateX(0%);
+    opacity: 1;
 }
 
 .arrow-left {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 3%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .arrow-left:hover {
@@ -107,14 +127,21 @@ section > #grid-scroll-horizontal {
 
 .arrow-right {
     position: absolute;
-    top: 35%;
+    top: 50%;
     right: 3%;
+    transform: translateY(-50%);
+    z-index: 2;
 }
 
 .arrow-right:hover {
     cursor: pointer;
     opacity: 80%;
 }
+
+.buttonInactive {
+    pointer-events: none;
+}
+
 
 /* Habilities aquired */
 section > #habilities-aquired {
@@ -126,6 +153,11 @@ section > #habilities-aquired {
 #habilities-aquired > img {
     display: none;
 }
+
+#habilities-aquired > img.active {
+    display: initial;
+}
+
 
 /* Work */
 #work, #contact-info {
@@ -191,8 +223,9 @@ section > #habilities-aquired {
 }
 
 .contact-list {
+    margin-top: 2rem;
     display: flex;
-    gap: 80px;
+    gap: 60px;
 }
 
 .contact-list > div {
@@ -200,12 +233,21 @@ section > #habilities-aquired {
     font-weight: 600;
 }
 
-/* Footer */
+.contact-list > div > a {
+    text-decoration: none;
+    color: #212121;
+}
 
+
+/* Footer */
 footer {
     padding: 7rem;
     text-align: right;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+footer > a {
     text-decoration: none;
+    color: #212121;
 }
