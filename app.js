@@ -6,13 +6,11 @@ var buttonLeft = document.querySelector('img.arrow-left')
 
 buttonRight.addEventListener('click', scrollHorizontal)
 
-console.log(buttonRight)
-
 function scrollHorizontal (event) {
 
     passoAtual++
 
-    var target = document.querySelector('.' + passoAtual)
+    var target = document.querySelector('.step-' + passoAtual)
     
     target.scrollIntoView()
 

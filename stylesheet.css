@@ -143,6 +143,32 @@ section > #habilities-aquired {
     margin: 0%;
 }
 
+.main-work {
+    margin: 0;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-work > div {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.project-name {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.main-work > div > hr {
+    width: 40px;
+    justify-self: flex-start;
+}
+
+
 
 /* Contact */
 #contact-info > h1 {
